@@ -1,0 +1,199 @@
+/* Overall body styling */
+.body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(29, 53, 87); /* Dark blue background */
+  background: linear-gradient(
+    0deg,
+    rgba(29, 53, 87, 1) 0%,
+    rgba(56, 189, 248, 1) 100% /* Gradient from dark blue to light blue */
+  );
+}
+
+/* Main container styling */
+.main {
+  width: 540px;
+  height: fit-content;
+  background-color: #ffffff; /* White background for the main container */
+  padding: 24px;
+  text-align: center;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.main:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Heading styling */
+.main h1 {
+  font-size: 28px;
+  margin-top: 20px;
+  color: #1e3a8a; /* Dark blue color for heading */
+}
+
+/* Registration form styling */
+.register {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.registerFields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* Form field container styling */
+.registerFields div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+/* Form input styling */
+.registerFields input {
+  height: 36px;
+  padding: 8px 12px;
+  padding-right: 24px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb; /* Light gray border */
+  font-size: 14px;
+}
+
+/* Label styling */
+.registerFields label {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1e40af; /* Dark blue for labels */
+}
+
+/* Button styling */
+.button {
+  width: fit-content;
+  margin-bottom: 12px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff; /* White text */
+  font-weight: 600;
+  background-color: #3b82f6; /* Blue button background */
+  border: none;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+/* Error message styling */
+.errorMessage {
+  color: #dc2626; /* Red color for error messages */
+  font-size: 12px;
+}
+
+/* Verify button styling */
+.verifyButton {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #4f46e5; /* Purple background */
+  color: #ffffff; /* White text */
+}
+
+.verifyButton:disabled {
+  cursor: not-allowed;
+  background-color: #9ca3af; /* Gray background for disabled state */
+}
+
+/* OTP input styling */
+.otpInput {
+  width: 240px;
+  height: 36px;
+  position: absolute;
+  right: 16px;
+}
+
+/* Disabled input styling */
+.registerFields input:disabled {
+  cursor: not-allowed;
+  background-color: #f3f4f6; /* Light gray background for disabled inputs */
+}
+
+/* Loading button styling */
+.loadingButton {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: wait;
+  background-color: #4b5563; /* Dark gray background */
+  color: #ffffff; /* White text */
+}
+
+/* Loading cursor styling */
+.loading {
+  cursor: wait;
+}
+
+/* Verified image styling */
+.verifiedImage {
+  position: absolute;
+  right: 8px;
+  cursor: not-allowed;
+}
+
+/* Address lookup styling */
+.addressLookup {
+  justify-content: center !important;
+}
+
+.addressLookup div {
+  padding-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  flex-direction: column !important;
+  align-items: center;
+  text-align: start;
+}
+
+.addressLookup p {
+  padding-top: 12px;
+  font-size: 16px;
+}
+
+/* Address lookup list item styling */
+.addressLookup li {
+  padding-top: 12px;
+}
+
+/* Success message styling */
+.success {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background-color: #fefcbf; /* Light yellow background */
+  color: #d97706; /* Orange color for success messages */
+  padding: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 12px; /* Rounded corners */
+  border: 2px solid #fefcbf; /* Matching border color */
+}

@@ -1,0 +1,34 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(63, 94, 251); /* Updated background color */
+  background: linear-gradient(
+    45deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  ); /* Updated gradient */
+}
+
+.registration {
+  width: 80%;
+  max-width: 500px; /* Set a max-width for better responsiveness */
+  padding: 40px;
+  border: 1px solid #ddd; /* Lighter border color */
+  background-color: #f9f9f9; /* Light grey background for a soft look */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for more depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px; /* Increased gap for better spacing */
+}
+
+
+.link {
+  text-decoration: none;
+  color: #3498db; /* Changed link color to a blue shade */
+  font-weight: bold; /* Added bold text for emphasis */
+}
